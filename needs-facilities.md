@@ -3,7 +3,7 @@
 Scenario: Report visitor trends during a week of operation
 
   Given Camera and sensor turned on
-  When  VisitorCount+=1
+  When  Count Visitor and update
   Then I see "number of visitors"
 
 Scenario: Alert when seating capacity is full
