@@ -8,7 +8,7 @@ Scenario: Show patient visits during working days and holidays
   Then Director can see "number of patient visit on working days or holidays"
 
 Scenario: Compute parking slots to reserve for visiting specialists
-  Given Sensor turn on and reserve some slots 
+  Given Sensor turn on 
   When Check reserve slot count greater than one
   And decrement reserve slot count by one
   Then Director can see "slot is free or not"
