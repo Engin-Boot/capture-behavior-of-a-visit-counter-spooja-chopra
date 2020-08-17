@@ -9,6 +9,5 @@ Scenario: Show patient visits during working days and holidays
   
 Scenario: Compute parking slots to reserve for visiting specialists
 Given Sensor turn on and set number of reserve slots.
-When Check reserve slot count.
-And decrement reserve slot count. 
+When Check reserve slot count and decrement reserve slot count. 
 Then Director can see "slot is free or not".
